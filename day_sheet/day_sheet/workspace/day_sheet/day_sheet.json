@@ -1,0 +1,41 @@
+{
+ "app": "frappe",
+ "charts": [],
+ "content": "[{\"id\":\"Ek2LJ-yE0R\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Day Sheet</span>\",\"col\":12}},{\"id\":\"0DNoi0283Y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Day Sheet\",\"col\":3}}]",
+ "creation": "2025-08-02 00:58:18.313605",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "table",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Day Sheet",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-08-02 01:00:21.929818",
+ "modified_by": "Administrator",
+ "module": "Day Sheet",
+ "name": "Day Sheet",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Day Sheet",
+   "link_to": "Day Sheet Entry",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Day Sheet",
+ "type": "Workspace"
+}

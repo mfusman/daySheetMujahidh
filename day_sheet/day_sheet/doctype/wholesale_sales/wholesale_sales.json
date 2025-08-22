@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-02 12:13:44.156528",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "uom_box",
+  "box",
+  "loose",
+  "qty",
+  "uom",
+  "rate",
+  "amount",
+  "customer",
+  "payment_type"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1,
+   "width": "300"
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Uom",
+   "options": "UOM",
+   "reqd": 1,
+   "width": "40"
+  },
+  {
+   "columns": 1,
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "reqd": 1,
+   "width": "150"
+  },
+  {
+   "columns": 2,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Person",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Type",
+   "options": "Cash\nCredit",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "reqd": 1,
+   "width": "90"
+  },
+  {
+   "fieldname": "box",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Box Qty"
+  },
+  {
+   "fieldname": "loose",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Loose Qty"
+  },
+  {
+   "fieldname": "uom_box",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Box UOM",
+   "options": "UOM"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-19 01:04:58.805296",
+ "modified_by": "Administrator",
+ "module": "Day Sheet",
+ "name": "Wholesale Sales",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
