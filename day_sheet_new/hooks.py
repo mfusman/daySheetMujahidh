@@ -5,6 +5,13 @@ app_description = "Day Sheet Management"
 app_email = "mfusman14@gmail.com"
 app_license = "mit"
 
+
+fixtures = [
+    "Custom Field",
+    "Property Setter",
+    "Client Script"
+]
+
 # Apps
 # ------------------
 
