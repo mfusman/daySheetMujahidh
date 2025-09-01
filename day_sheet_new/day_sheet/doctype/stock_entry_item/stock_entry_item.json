@@ -9,8 +9,10 @@
   "item",
   "qty",
   "uom",
-  "moving_average_price",
-  "amount"
+  "unit_price",
+  "amount",
+  "in_or_out",
+  "current_stock"
  ],
  "fields": [
   {
@@ -37,23 +39,36 @@
    "reqd": 1
   },
   {
-   "fieldname": "moving_average_price",
-   "fieldtype": "Currency",
-   "in_list_view": 1,
-   "label": "Moving Average"
-  },
-  {
    "fieldname": "amount",
    "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Amount"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price"
+  },
+  {
+   "fieldname": "in_or_out",
+   "fieldtype": "Select",
+   "label": "In/Out",
+   "options": "\nIn\nOut",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_stock",
+   "fieldtype": "Data",
+   "label": "Current Stock",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-19 00:02:30.244802",
+ "modified": "2025-09-02 00:22:55.683917",
  "modified_by": "Administrator",
  "module": "Day Sheet",
  "name": "Stock Entry Item",

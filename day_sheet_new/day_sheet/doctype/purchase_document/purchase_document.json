@@ -8,10 +8,9 @@
   "section_break_pswy",
   "amended_from",
   "purchase_date",
-  "supplier",
   "additional_cost",
   "total_amount",
-  "items"
+  "purchase_item"
  ],
  "fields": [
   {
@@ -36,13 +35,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "supplier",
-   "fieldtype": "Link",
-   "label": "Supplier",
-   "options": "Person",
-   "reqd": 1
-  },
-  {
    "fieldname": "additional_cost",
    "fieldtype": "Currency",
    "label": "Additional Cost"
@@ -54,7 +46,7 @@
    "reqd": 1
   },
   {
-   "fieldname": "items",
+   "fieldname": "purchase_item",
    "fieldtype": "Table",
    "label": "Purchase Item",
    "options": "Purchase Item"
@@ -64,7 +56,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-19 00:33:22.907203",
+ "modified": "2025-09-02 00:38:30.996464",
  "modified_by": "Administrator",
  "module": "Day Sheet",
  "name": "Purchase Document",

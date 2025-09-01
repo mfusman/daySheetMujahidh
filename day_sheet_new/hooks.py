@@ -12,6 +12,12 @@ fixtures = [
     "Client Script"
 ]
 
+doc_events = {
+    "Purchase Document": {
+        "on_submit": "day_sheet_new.day_sheet.doctype.purchase_document.purchase_document.on_submit"
+    }
+}
+
 # Apps
 # ------------------
 
