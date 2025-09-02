@@ -10,7 +10,7 @@
   "entry_type",
   "date",
   "reference_doc",
-  "entry_stock_item"
+  "stock_entry_item"
  ],
  "fields": [
   {
@@ -47,9 +47,9 @@
    "label": "Reference Document "
   },
   {
-   "fieldname": "entry_stock_item",
+   "fieldname": "stock_entry_item",
    "fieldtype": "Table",
-   "label": "Entry Stock Item",
+   "label": "Stock Entry Item",
    "options": "Stock Entry Item"
   }
  ],
@@ -57,7 +57,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-19 01:01:21.954114",
+ "modified": "2025-09-02 02:58:34.343892",
  "modified_by": "Administrator",
  "module": "Day Sheet",
  "name": "Stock Entry",

@@ -1,11 +1,28 @@
 // Copyright (c) 2025, Mohammed Fauz Usman and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Day Sheet Entry", {
-// 	refresh(frm) {
-
-// 	},
-// });
+frappe.ui.form.on("Day Sheet Entry", {
+	 onload: function(frm) {
+        if (frm.is_new()) {   // only for new Day Sheet Entry
+            frappe.call({
+                method: "day_sheet_new.day_sheet.doctype.day_sheet_entry.day_sheet_entry.get_opening_stock",
+                callback: function(r) {
+                    if (r.message) {
+                        frm.clear_table("day_opening_stock");
+                        r.message.forEach(function(row) {
+                            let child = frm.add_child("day_opening_stock");
+                            child.item = row.item;
+                            child.qty = row.current_stock;
+                            child.uom = row.uom;
+                            child.unit_price = row.unit_price;
+                        });
+                        frm.refresh_field("day_opening_stock");
+                    }
+                }
+            });
+        }
+    }
+});
 
 function calculate_quantity(frm, cdt, cdn) {
     let row = locals[cdt][cdn];

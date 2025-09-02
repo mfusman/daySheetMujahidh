@@ -35,7 +35,7 @@ function calculate_quantity(frm, cdt, cdn) {
             let loose = row.loose || 0;
 
             row.qty = boxes_qty + loose;
-            row.amount = (row.qty || 0) * (row.rate || 0);
+            row.amount = (row.qty || 0) * (row.cost || 0);
             frm.refresh_field("purchase_item");  // refresh grid
             calculate_item_costs(frm, cdt, cdn);
         }
@@ -49,7 +49,7 @@ function calculate_quantity(frm, cdt, cdn) {
     //     let loose = row.loose || 0;
 
     //     row.qty = boxes_qty + loose;
-    //     row.amount = (row.qty || 0) * (row.rate || 0);
+    //     row.amount = (row.qty || 0) * (row.cost || 0);
 
     //     frm.refresh_field("purchase_item");
     // }
@@ -67,9 +67,9 @@ frappe.ui.form.on("Purchase Item", {
                 frappe.msgprint("Quantity must be a whole number for selected UOM.");
                 row.qty = Math.floor(row.qty);
                 frm.refresh_field("purchase_item");
-            }else if ( row.rate != null ){
+            }else if ( row.cost != null ){
 //                frappe.msgprint("Hi");
-                row.amount = (row.qty || 0) * (row.rate || 0);
+                row.amount = (row.qty || 0) * (row.cost || 0);
                 frm.refresh_field('purchase_item');
             } 
         })};        
@@ -94,14 +94,14 @@ frappe.ui.form.on("Purchase Item", {
     },
     quantity: function(frm, cdt, cdn) {
         let row = locals[cdt][cdn];
-        row.amount = (row.qty || 0) * (row.rate || 0);
+        row.amount = (row.qty || 0) * (row.cost || 0);
         frm.refresh_field('purchase_item');
         calculate_item_costs(frm);
     },
-    rate: function(frm, cdt, cdn) {
+    cost: function(frm, cdt, cdn) {
         let row = locals[cdt][cdn];
-        if (row.rate){
-            row.amount = (row.qty || 0) * (row.rate || 0);
+        if (row.cost){
+            row.amount = (row.qty || 0) * (row.cost || 0);
             frm.refresh_field('purchase_item');
             calculate_item_costs(frm);
         }
@@ -129,7 +129,7 @@ frappe.ui.form.on("Purchase Item", {
                 frm.refresh_field("purchase_item");
             }else{
 //                frappe.msgprint("Hi");
-                row.amount = (row.qty || 0) * (row.rate || 0);
+                row.amount = (row.qty || 0) * (row.cost || 0);
                 frm.refresh_field('purchase_item');
             } 
         })};

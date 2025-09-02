@@ -12,7 +12,7 @@
   "loose",
   "qty",
   "uom",
-  "rate",
+  "cost",
   "calculated_cost",
   "amount",
   "supplier"
@@ -72,24 +72,24 @@
    "reqd": 1
   },
   {
-   "fieldname": "rate",
-   "fieldtype": "Currency",
-   "label": "Rate"
-  },
-  {
    "fieldname": "supplier",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Supplier",
    "options": "Person",
    "reqd": 1
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Rate"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-02 00:35:43.887443",
+ "modified": "2025-09-02 02:56:28.973601",
  "modified_by": "Administrator",
  "module": "Day Sheet",
  "name": "Purchase Item",
