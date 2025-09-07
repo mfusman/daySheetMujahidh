@@ -18,9 +18,11 @@
   "day_ending_stock",
   "retail_sales",
   "summary",
-  "total_wholesale",
-  "total_retail",
+  "total_wholesale_amount",
+  "total_retail_amount",
   "salary",
+  "column_break_twsy",
+  "total_profit",
   "cash_collection",
   "collection",
   "expected_cash_collection",
@@ -166,28 +168,37 @@
    "label": "Summary"
   },
   {
-   "fieldname": "total_wholesale",
+   "fieldname": "salary",
+   "fieldtype": "Currency",
+   "label": "Salary Paid"
+  },
+  {
+   "fieldname": "total_wholesale_amount",
    "fieldtype": "Currency",
    "label": "Total Wholesale",
    "read_only": 1
   },
   {
-   "fieldname": "total_retail",
+   "fieldname": "total_retail_amount",
    "fieldtype": "Currency",
    "label": "Total Retail",
    "read_only": 1
   },
   {
-   "fieldname": "salary",
-   "fieldtype": "Data",
-   "label": "Salary Paid"
+   "fieldname": "column_break_twsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_profit",
+   "fieldtype": "Currency",
+   "label": "Total Profit"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-03 01:08:50.999817",
+ "modified": "2025-09-07 21:28:11.504392",
  "modified_by": "Administrator",
  "module": "Day Sheet",
  "name": "Day Sheet Entry",

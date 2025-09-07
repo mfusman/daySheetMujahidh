@@ -17,7 +17,8 @@
    "in_list_view": 1,
    "label": "Item",
    "options": "Item",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "qty",
@@ -39,7 +40,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-02 19:25:08.527363",
+ "modified": "2025-09-06 12:39:04.768919",
  "modified_by": "Administrator",
  "module": "Day Sheet",
  "name": "Day Ending Stock",

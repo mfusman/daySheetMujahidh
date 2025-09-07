@@ -12,7 +12,8 @@
   "unit_price",
   "amount",
   "in_or_out",
-  "current_stock"
+  "current_stock",
+  "profit"
  ],
  "fields": [
   {
@@ -59,16 +60,21 @@
   },
   {
    "fieldname": "current_stock",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Current Stock",
    "reqd": 1
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Currency",
+   "label": "Profit"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-02 00:22:55.683917",
+ "modified": "2025-09-08 00:50:12.409382",
  "modified_by": "Administrator",
  "module": "Day Sheet",
  "name": "Stock Entry Item",
